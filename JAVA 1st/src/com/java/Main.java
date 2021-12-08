@@ -387,15 +387,19 @@ class patients{
     public int nonindianpatient(){
         return 876;
     }
-    public boolean getvoternationality(){
+    public boolean getvoternationality(String countryName){
         boolean indian=true;
-        if (indian==true){
-            System.out.println("you can get treatment");
+        //String country="";
+
+        if (countryName=="Indian"){
+            //System.out.println("you can get treatment");
+            return true;
         }
         else {
-            System.out.println("you cannot");
+            //System.out.println("you cannot");
+            return false;
         }
-        return true;
+        //return true;
     }
 }
 
